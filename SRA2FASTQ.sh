@@ -1,4 +1,4 @@
-#conda create -n SRA -c bioconda sra-tools parallel-fastq-dump
+#conda create -n SRA -c bioconda sra-tools
 conda activate SRA
 mkdir ./SRA_download
 for s in $(cat SRR_ID.tsv | sed 's/\t/,/g' | grep "SRA" -v)
