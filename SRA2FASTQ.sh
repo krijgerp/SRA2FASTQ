@@ -1,6 +1,9 @@
-!/bin/bash
+#!/bin/bash
+
 ## This script download SRA files from NCBI and convert them to fastq
-## The script requires a list of SRR IDs (SRR_ID.tsv) and a conda environment (SRA) with the SRA toolkit installed
+## The script requires a list of SRR IDs (SRR_ID.tsv) and a conda environment (SRA) with the SRA toolkit and pigz installed.
+## conda install -c bioconda sra-tools
+## conda install -c conda-forge pigz
 
 ## Activate conda environment
 conda activate SRA
